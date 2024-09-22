@@ -38,7 +38,8 @@ rgbeLoader.load(
 
 // creating Loader for wodden box
 const loader = new GLTFLoader();
-loader.load("./millitary_box.glb", function (gltf) {
+loader.load("/millitary_box.glb", function (gltf) {
+
   gltf.scene.rotation.y = -(Math.PI / 2);
   gltf.scene.position.y = -1;
   scene.add(gltf.scene);
